@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #606077a4;
+  color: #000000;
+}
+
+/* Encabezado con imagen de fondo */
+.encabezado-con-fondo {
+  background-image: url('globos.jpg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px black;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Frase triste */
+.encabezado-con-fondo p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #d9d5e6;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+
+/* Animación de entrada para secciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  border-left: none; /* Quitamos la línea roja del lado izquierdo */
+  padding-left: 0;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center; /* Esto centra el texto */
+  font-size: 1.6rem;  /* Opcional: lo hace un poco más grande */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Opcional: un poco de sombra */
+}
